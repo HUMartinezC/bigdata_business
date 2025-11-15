@@ -1,0 +1,47 @@
+services:
+  mysql:
+    build: 
+      context: ./
+      dockerfile: Dockerfile-mysql
+    container_name: gestion-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: gestion_practicas
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: unless-stopped
+
+  postgres:
+    build: 
+      context: ./
+      dockerfile: Dockerfile-postgres
+    container_name: gestion-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: gestion_practicas
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  oracle:
+    build: 
+      context: ./
+      dockerfile: Dockerfile-oracle
+    container_name: gestion-oracle
+    environment:
+      ORACLE_PASSWORD: root
+    ports:
+      - "1521:1521"
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+    restart: unless-stopped
+
+volumes:
+  mysql_data:
+  pg_data:
+  oracle_data:

@@ -1,0 +1,31 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+venv/
+env/
+.venv/
+*.sqlite3
+*.db
+
+# === JSON / outputs ===
+*.json
+
+# === IDEs / editores ===
+.vscode/
+.idea/
+*.iml
+
+# === Docker ===
+*.log
+*.pid
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# === Sistema operativo ===
+.DS_Store
+Thumbs.db
+
+/negocio-venv

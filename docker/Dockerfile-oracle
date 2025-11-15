@@ -1,0 +1,5 @@
+FROM gvenzl/oracle-xe:latest
+
+ENV ORACLE_PASSWORD=root
+
+EXPOSE 1521 5500

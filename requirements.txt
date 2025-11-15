@@ -1,0 +1,9 @@
+cffi==2.0.0
+cryptography==46.0.3
+Faker==38.0.0
+mysql-connector-python==9.5.0
+oracledb==3.4.1
+psycopg2-binary==2.9.11
+pycparser==2.23
+typing_extensions==4.15.0
+tzdata==2025.2
