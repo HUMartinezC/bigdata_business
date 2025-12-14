@@ -123,14 +123,14 @@ Exporta datos de las bases de datos a formato JSON para análisis o migración.
 
 ### Variables de entorno:
 ```yaml
-MYSQL_ROOT_PASSWORD: root
-MYSQL_DATABASE: gestion_practicas
+MYSQL_ROOT_PASSWORD: 
+MYSQL_DATABASE: 
 
-POSTGRES_USER: postgres
-POSTGRES_PASSWORD: root
-POSTGRES_DB: gestion_practicas
+POSTGRES_USER: 
+POSTGRES_PASSWORD: 
+POSTGRES_DB: 
 
-ORACLE_PASSWORD: root
+ORACLE_PASSWORD: 
 ```
 
 ## Uso
